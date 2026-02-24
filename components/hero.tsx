@@ -10,11 +10,11 @@ export function Hero() {
       <div className="mx-auto max-w-5xl w-full grid md:grid-cols-[1fr_300px] gap-12 md:gap-16 items-center">
         {/* Text */}
         <div className="order-2 md:order-1">
-          <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">
+          <p className="text-sm uppercase tracking-widest text-primary font-medium mb-4">
             Designer & Developer
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-balance text-foreground">
-            Hi, I{"'"}m Eliana.
+            Hi, I{"'"}m <span className="text-primary">Eliana</span>.
           </h1>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
             I{"'"}m a designer and developer based in Brooklyn, NY. I care
@@ -39,7 +39,7 @@ export function Hero() {
 
         {/* Photo */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
-          <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden border border-border/60">
+          <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden border-2 border-lilac/40 shadow-[4px_4px_0px_0px] shadow-yellow/60">
             <Image
               src="/images/portrait.jpg"
               alt="Portrait of Eliana Reyes"

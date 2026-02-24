@@ -30,9 +30,9 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="py-24 px-6 bg-secondary/40">
+    <section id="projects" className="py-24 px-6 bg-lilac-soft/40">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">
+        <p className="text-sm uppercase tracking-widest text-primary font-medium mb-2">
           Projects
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
@@ -74,14 +74,21 @@ export function Projects() {
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-5">
-                  {project.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-2.5 py-1 rounded-full bg-background text-muted-foreground border border-border/60"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {project.tags.map((tag, tagIdx) => {
+                    const colors = [
+                      "bg-lilac-soft text-foreground border border-lilac/20",
+                      "bg-yellow-soft text-foreground border border-yellow/20",
+                      "bg-rose-soft text-foreground border border-rose/20",
+                    ]
+                    return (
+                      <span
+                        key={tag}
+                        className={`text-xs px-2.5 py-1 rounded-full ${colors[tagIdx % colors.length]}`}
+                      >
+                        {tag}
+                      </span>
+                    )
+                  })}
                 </div>
               </div>
             </a>

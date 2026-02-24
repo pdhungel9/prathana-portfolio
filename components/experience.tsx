@@ -29,7 +29,7 @@ export function Experience() {
   return (
     <section id="experience" className="py-24 px-6">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">
+        <p className="text-sm uppercase tracking-widest text-primary font-medium mb-2">
           Experience
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
@@ -57,14 +57,22 @@ export function Experience() {
                   {job.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mt-4">
-                  {job.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="text-xs px-2.5 py-1 rounded-full bg-secondary text-secondary-foreground"
-                    >
-                      {tag}
-                    </span>
-                  ))}
+                  {job.tags.map((tag, tagIdx) => {
+                    const colors = [
+                      "bg-lilac-soft text-foreground",
+                      "bg-yellow-soft text-foreground",
+                      "bg-rose-soft text-foreground",
+                      "bg-secondary text-secondary-foreground",
+                    ]
+                    return (
+                      <span
+                        key={tag}
+                        className={`text-xs px-2.5 py-1 rounded-full ${colors[tagIdx % colors.length]}`}
+                      >
+                        {tag}
+                      </span>
+                    )
+                  })}
                 </div>
               </div>
             </div>

@@ -27,7 +27,7 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 px-6">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-muted-foreground mb-2">
+        <p className="text-sm uppercase tracking-widest text-primary font-medium mb-2">
           Contact
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
@@ -46,7 +46,7 @@ export function Contact() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center h-10 w-10 rounded-full border border-border/60 bg-background text-muted-foreground hover:text-foreground hover:border-primary/40 transition-all"
+              className="group flex items-center justify-center h-10 w-10 rounded-full border border-lilac/30 bg-lilac-soft/50 text-foreground hover:bg-lilac-soft hover:border-primary/50 transition-all"
               aria-label={social.label}
             >
               <social.icon className="h-4 w-4" />
