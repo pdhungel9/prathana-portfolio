@@ -64,6 +64,7 @@ export function Skills() {
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
           Tools I work with
+          <span className="block h-1 w-16 bg-yellow rounded-full mt-3" />
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2">

@@ -27,20 +27,21 @@ const jobs = [
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 px-6">
+    <section id="experience" className="py-24 px-6 bg-yellow-soft/50">
       <div className="mx-auto max-w-5xl">
         <p className="text-sm uppercase tracking-widest text-primary font-medium mb-2">
           Experience
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
           Where I{"'"}ve worked
+          <span className="block h-1 w-16 bg-yellow rounded-full mt-3" />
         </h2>
 
         <div className="flex flex-col gap-0">
           {jobs.map((job, i) => (
             <div
               key={i}
-              className="group grid md:grid-cols-[180px_1fr] gap-4 md:gap-10 py-8 border-t border-border/60 first:border-t-0 first:pt-0 last:pb-0"
+              className="group grid md:grid-cols-[180px_1fr] gap-4 md:gap-10 py-8 pl-5 border-l-2 border-yellow/70 border-t border-t-border/40 first:border-t-0 first:pt-0 last:pb-0"
             >
               <p className="text-sm text-muted-foreground pt-1 shrink-0">
                 {job.period}

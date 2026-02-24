@@ -37,6 +37,7 @@ export function Projects() {
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
           Selected work
+          <span className="block h-1 w-16 bg-yellow rounded-full mt-3" />
         </h2>
 
         <div className="grid gap-12 md:gap-16">

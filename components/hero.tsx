@@ -14,7 +14,7 @@ export function Hero() {
             Designer & Developer
           </p>
           <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-balance text-foreground">
-            Hi, I{"'"}m <span className="text-primary">Eliana</span>.
+            Hi, I{"'"}m <span className="relative inline-block text-primary"><span className="relative z-10">Eliana</span><span className="absolute bottom-1 left-0 w-full h-3 bg-yellow-mid/60 -z-0 rounded-sm" /></span>.
           </h1>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
             I{"'"}m a designer and developer based in Brooklyn, NY. I care
@@ -30,7 +30,7 @@ export function Hero() {
 
           <a
             href="#experience"
-            className="inline-flex items-center gap-2 mt-10 text-sm text-muted-foreground hover:text-foreground transition-colors group"
+            className="inline-flex items-center gap-2 mt-10 text-sm font-medium px-5 py-2.5 rounded-full bg-yellow text-foreground hover:bg-yellow-mid transition-colors group shadow-sm"
           >
             See my work
             <ArrowDown className="h-3.5 w-3.5 group-hover:translate-y-0.5 transition-transform" />
@@ -39,7 +39,7 @@ export function Hero() {
 
         {/* Photo */}
         <div className="order-1 md:order-2 flex justify-center md:justify-end">
-          <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden border-2 border-lilac/40 shadow-[4px_4px_0px_0px] shadow-yellow/60">
+          <div className="relative w-56 h-72 md:w-64 md:h-80 rounded-2xl overflow-hidden border-2 border-yellow/50 shadow-[5px_5px_0px_0px] shadow-yellow">
             <Image
               src="/images/portrait.jpg"
               alt="Portrait of Eliana Reyes"
