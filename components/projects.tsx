@@ -12,10 +12,10 @@ export function Projects() {
   return (
     <section id="projects" className="py-24 px-6 bg-sage-soft/40">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-accent font-medium mb-2">
+        <p className="text-base uppercase tracking-widest text-forest font-semibold mb-2">
           Projects
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-14">
           Selected work
           <span className="block h-1 w-16 bg-pumpkin rounded-full mt-3" />
         </h2>
@@ -42,15 +42,15 @@ export function Projects() {
             <div className="flex flex-wrap gap-2 mt-5">
               {project.tags.map((tag, tagIdx) => {
                 const colors = [
-                  "bg-forest-soft text-foreground border border-forest/20",
-                  "bg-pumpkin-soft text-foreground border border-pumpkin/20",
-                  "bg-amber-soft text-foreground border border-amber/20",
-                  "bg-maroon-soft text-foreground border border-maroon/15",
+                  "bg-forest-soft text-forest border border-forest/20",
+                  "bg-pumpkin-soft text-pumpkin border border-pumpkin/20",
+                  "bg-amber-soft text-amber border border-amber/20",
+                  "bg-maroon-soft text-maroon border border-maroon/15",
                 ]
                 return (
                   <span
                     key={tag}
-                    className={`text-xs px-2.5 py-1 rounded-full ${colors[tagIdx % colors.length]}`}
+                    className={`text-xs font-medium px-2.5 py-1 rounded-full ${colors[tagIdx % colors.length]}`}
                   >
                     {tag}
                   </span>

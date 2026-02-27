@@ -10,11 +10,11 @@ export function Hero() {
       <div className="mx-auto max-w-5xl w-full grid md:grid-cols-[1fr_300px] gap-12 md:gap-16 items-center">
         {/* Text */}
         <div className="order-2 md:order-1">
-          <p className="text-sm uppercase tracking-widest text-accent font-medium mb-4">
+          <p className="text-base uppercase tracking-widest text-forest font-semibold mb-4">
             Data Engineer
           </p>
-          <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl leading-tight text-balance text-foreground">
-            Hi, I{"'"}m <span className="relative inline-block text-primary"><span className="relative z-10">Prathana</span><span className="absolute bottom-1 left-0 w-full h-3 bg-pumpkin/40 -z-0 rounded-sm" /></span>.
+          <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl leading-tight text-balance text-foreground">
+            Hi, I{"'"}m <span className="relative inline-block text-forest"><span className="relative z-10">Prathana</span><span className="absolute bottom-1.5 left-0 w-full h-3.5 bg-pumpkin/40 -z-0 rounded-sm" /></span>.
           </h1>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
             I{"'"}m a data engineer with a background in building and supporting
@@ -31,7 +31,7 @@ export function Hero() {
 
           <a
             href="#experience"
-            className="inline-flex items-center gap-2 mt-10 text-sm font-medium px-5 py-2.5 rounded-full bg-pumpkin text-primary-foreground hover:bg-pumpkin/85 transition-colors group shadow-sm"
+            className="inline-flex items-center gap-2 mt-10 text-sm font-semibold px-6 py-3 rounded-full bg-pumpkin text-card hover:brightness-110 transition-all group shadow-md shadow-pumpkin/30"
           >
             See my work
             <ArrowDown className="h-3.5 w-3.5 group-hover:translate-y-0.5 transition-transform" />

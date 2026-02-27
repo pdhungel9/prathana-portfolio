@@ -8,7 +8,7 @@ const socials = [
   },
   {
     label: "GitHub",
-    href: "https://github.com",
+    href: "https://github.com/pdhungel9",
     icon: Github,
   },
   {
@@ -22,10 +22,10 @@ export function Contact() {
   return (
     <section id="contact" className="py-24 px-6 bg-pumpkin-soft/40">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-accent font-medium mb-2">
+        <p className="text-base uppercase tracking-widest text-forest font-semibold mb-2">
           Contact
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-6">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-6">
           Let{"'"}s connect
           <span className="block h-1 w-16 bg-pumpkin rounded-full mt-3" />
         </h2>
@@ -41,7 +41,7 @@ export function Contact() {
               href={social.href}
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center justify-center h-10 w-10 rounded-full border border-sage/40 bg-sage-soft text-foreground hover:bg-forest-soft hover:border-forest/40 transition-all"
+              className="group flex items-center justify-center h-10 w-10 rounded-full border border-pumpkin/40 bg-pumpkin-soft text-foreground hover:bg-pumpkin/20 hover:border-pumpkin transition-all"
               aria-label={social.label}
             >
               <social.icon className="h-4 w-4" />

@@ -1,13 +1,13 @@
 const jobs = [
   {
-    period: "2022 — 2024",
+    period: "2022 - 2024",
     title: "Data Engineer",
     company: "Fidelity Investments",
     description:
       "Built and supported integrated enterprise data platforms leveraging Oracle and Snowflake. Migrated legacy batch jobs using AWS and Control-M, automated PII masking pipelines in Snowflake, and boosted CDC pipeline reliability by automating 20+ daily validation jobs across data platforms.",
   },
   {
-    period: "2021 — 2022",
+    period: "2021 - 2022",
     title: "Python Teaching Assistant",
     company: "Boston University",
     description:
@@ -19,10 +19,10 @@ export function Experience() {
   return (
     <section id="experience" className="py-24 px-6 bg-forest-soft/50">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-accent font-medium mb-2">
+        <p className="text-base uppercase tracking-widest text-forest font-semibold mb-2">
           Experience
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-14">
           Where I{"'"}ve worked
           <span className="block h-1 w-16 bg-pumpkin rounded-full mt-3" />
         </h2>

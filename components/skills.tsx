@@ -1,40 +1,52 @@
-import { Code2, Cloud, DatabaseZap, GitBranch } from "lucide-react"
+import { Code2, Cloud, DatabaseZap, GitBranch, Database, Wind } from "lucide-react"
 
 const skillGroups = [
   {
     label: "Programming Languages",
     icon: Code2,
-    color: "bg-sage-soft border-sage/30 text-foreground",
+    bg: "bg-forest-soft",
+    border: "border-forest/25",
     iconColor: "text-forest",
-    skills: ["Python", "SQL (Oracle, Snowflake, PostgreSQL, CockroachDB)"],
+    skills: ["Python", "SQL"],
   },
   {
-    label: "Orchestration & Cloud Tools",
-    icon: Cloud,
-    color: "bg-pumpkin-soft border-pumpkin/30 text-foreground",
+    label: "Databases",
+    icon: Database,
+    bg: "bg-pumpkin-soft",
+    border: "border-pumpkin/25",
     iconColor: "text-pumpkin",
-    skills: [
-      "Control-M",
-      "AWS Batch",
-      "AWS CloudWatch",
-      "AWS IAM",
-      "AWS KMS",
-      "AWS S3",
-      "Airflow",
-    ],
+    skills: ["Oracle", "Snowflake", "PostgreSQL", "CockroachDB"],
+  },
+  {
+    label: "AWS Services",
+    icon: Cloud,
+    bg: "bg-amber-soft",
+    border: "border-amber/25",
+    iconColor: "text-amber",
+    skills: ["S3", "Batch", "CloudWatch", "IAM", "KMS"],
+  },
+  {
+    label: "Orchestration Tools",
+    icon: Wind,
+    bg: "bg-sage-soft",
+    border: "border-sage/30",
+    iconColor: "text-forest",
+    skills: ["Control-M", "Airflow"],
   },
   {
     label: "Replication Tools",
     icon: DatabaseZap,
-    color: "bg-maroon-soft border-maroon/20 text-foreground",
+    bg: "bg-maroon-soft",
+    border: "border-maroon/20",
     iconColor: "text-maroon",
     skills: ["Fivetran", "Oracle GoldenGate"],
   },
   {
     label: "DevOps & Collaboration",
     icon: GitBranch,
-    color: "bg-amber-soft border-amber/20 text-foreground",
-    iconColor: "text-amber",
+    bg: "bg-pumpkin-soft",
+    border: "border-pumpkin/20",
+    iconColor: "text-pumpkin",
     skills: [
       "Git",
       "Jenkins",
@@ -50,33 +62,33 @@ const skillGroups = [
 
 export function Skills() {
   return (
-    <section id="skills" className="py-24 px-6">
+    <section id="skills" className="py-24 px-6 bg-pumpkin-soft/30">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-accent font-medium mb-2">
+        <p className="text-base uppercase tracking-widest text-forest font-semibold mb-2">
           Skills
         </p>
-        <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
+        <h2 className="font-serif text-4xl md:text-5xl text-foreground mb-14">
           Tools I work with
           <span className="block h-1 w-16 bg-pumpkin rounded-full mt-3" />
         </h2>
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-4 grid-cols-2 md:grid-cols-3">
           {skillGroups.map((group) => (
             <div
               key={group.label}
-              className={`rounded-xl border p-6 ${group.color}`}
+              className={`rounded-xl border p-5 ${group.bg} ${group.border} flex flex-col`}
             >
-              <div className="flex items-center gap-3 mb-4">
-                <group.icon className={`h-5 w-5 ${group.iconColor}`} />
-                <h3 className="text-sm font-semibold tracking-wide uppercase text-foreground">
+              <div className="flex items-center gap-2.5 mb-4">
+                <group.icon className={`h-4.5 w-4.5 ${group.iconColor}`} />
+                <h3 className="text-xs font-semibold tracking-wide uppercase text-foreground">
                   {group.label}
                 </h3>
               </div>
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-col gap-1.5">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-sm px-3 py-1.5 rounded-full bg-card/80 border border-border/50 text-foreground"
+                    className="text-sm px-3 py-1.5 rounded-lg bg-card/80 border border-border/40 text-foreground w-fit"
                   >
                     {skill}
                   </span>
