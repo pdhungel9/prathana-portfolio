@@ -1,18 +1,18 @@
-import { Code2, Cloud, DatabaseZap, GitBranch, Globe } from "lucide-react"
+import { Code2, Cloud, DatabaseZap, GitBranch } from "lucide-react"
 
 const skillGroups = [
   {
     label: "Programming Languages",
     icon: Code2,
-    color: "bg-lilac-soft border-lilac/30 text-foreground",
-    iconColor: "text-lilac",
+    color: "bg-sage-soft border-sage/30 text-foreground",
+    iconColor: "text-forest",
     skills: ["Python", "SQL (Oracle, Snowflake, PostgreSQL, CockroachDB)"],
   },
   {
     label: "Orchestration & Cloud Tools",
     icon: Cloud,
-    color: "bg-yellow-soft border-yellow/30 text-foreground",
-    iconColor: "text-yellow",
+    color: "bg-pumpkin-soft border-pumpkin/30 text-foreground",
+    iconColor: "text-pumpkin",
     skills: [
       "Control-M",
       "AWS Batch",
@@ -26,15 +26,15 @@ const skillGroups = [
   {
     label: "Replication Tools",
     icon: DatabaseZap,
-    color: "bg-rose-soft border-rose/30 text-foreground",
-    iconColor: "text-rose",
+    color: "bg-maroon-soft border-maroon/20 text-foreground",
+    iconColor: "text-maroon",
     skills: ["Fivetran", "Oracle GoldenGate"],
   },
   {
     label: "DevOps & Collaboration",
     icon: GitBranch,
-    color: "bg-secondary border-border text-foreground",
-    iconColor: "text-primary",
+    color: "bg-amber-soft border-amber/20 text-foreground",
+    iconColor: "text-amber",
     skills: [
       "Git",
       "Jenkins",
@@ -46,25 +46,18 @@ const skillGroups = [
       "iceDQ",
     ],
   },
-  {
-    label: "Languages",
-    icon: Globe,
-    color: "bg-lilac-soft border-lilac/30 text-foreground",
-    iconColor: "text-lilac",
-    skills: ["English (Fluent)", "Nepali (Fluent)"],
-  },
 ]
 
 export function Skills() {
   return (
     <section id="skills" className="py-24 px-6">
       <div className="mx-auto max-w-5xl">
-        <p className="text-sm uppercase tracking-widest text-primary font-medium mb-2">
+        <p className="text-sm uppercase tracking-widest text-accent font-medium mb-2">
           Skills
         </p>
         <h2 className="font-serif text-3xl md:text-4xl text-foreground mb-14">
           Tools I work with
-          <span className="block h-1 w-16 bg-yellow rounded-full mt-3" />
+          <span className="block h-1 w-16 bg-pumpkin rounded-full mt-3" />
         </h2>
 
         <div className="grid gap-8 md:grid-cols-2">

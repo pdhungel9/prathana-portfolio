@@ -18,8 +18,8 @@ export function Navbar() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
       <div className="mx-auto max-w-5xl flex items-center justify-between px-6 py-4">
         <a href="#" className="font-serif text-lg tracking-tight text-foreground flex items-center gap-1.5">
-          Eliana Reyes
-          <span className="inline-block h-2 w-2 rounded-full bg-yellow" />
+          Prathana Dhungel
+          <span className="inline-block h-2 w-2 rounded-full bg-pumpkin" />
         </a>
 
         {/* Desktop links */}

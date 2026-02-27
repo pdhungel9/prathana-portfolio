@@ -14,8 +14,8 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: 'Eliana Reyes — Designer & Developer',
-  description: 'Portfolio of Eliana Reyes, a designer and developer crafting thoughtful digital experiences.',
+  title: 'Prathana Dhungel — Data Engineer',
+  description: 'Portfolio of Prathana Dhungel, a data engineer building scalable data platforms and pipelines.',
 }
 
 export const viewport: Viewport = {
