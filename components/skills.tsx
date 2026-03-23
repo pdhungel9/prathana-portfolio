@@ -7,7 +7,7 @@ const skillGroups = [
     bg: "bg-forest-soft",
     border: "border-forest/25",
     iconColor: "text-forest",
-    skills: ["Python", "SQL"],
+    skills: ["Python", "SQL", "Java", "R"],
   },
   {
     label: "Databases",
@@ -47,16 +47,7 @@ const skillGroups = [
     bg: "bg-pumpkin-soft",
     border: "border-pumpkin/20",
     iconColor: "text-pumpkin",
-    skills: [
-      "Git",
-      "Jenkins",
-      "Jira",
-      "Confluence",
-      "ServiceNow",
-      "Docker",
-      "Postman",
-      "iceDQ",
-    ],
+    skills: ["Git", "Jenkins", "Jira", "Confluence", "ServiceNow", "Docker"],
   },
 ]
 
@@ -78,17 +69,17 @@ export function Skills() {
               key={group.label}
               className={`rounded-xl border p-5 ${group.bg} ${group.border} flex flex-col`}
             >
-              <div className="flex items-center gap-2.5 mb-4">
-                <group.icon className={`h-4.5 w-4.5 ${group.iconColor}`} />
+              <div className="flex items-center gap-3 mb-4">
+                <group.icon className={`h-6 w-6 ${group.iconColor}`} />
                 <h3 className="text-xs font-semibold tracking-wide uppercase text-foreground">
                   {group.label}
                 </h3>
               </div>
-              <div className="flex flex-col gap-1.5">
+              <div className="flex flex-wrap gap-2">
                 {group.skills.map((skill) => (
                   <span
                     key={skill}
-                    className="text-sm px-3 py-1.5 rounded-lg bg-card/80 border border-border/40 text-foreground w-fit"
+                    className="text-sm px-3 py-1.5 rounded-lg bg-card/80 border border-border/40 text-foreground"
                   >
                     {skill}
                   </span>
