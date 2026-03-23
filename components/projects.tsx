@@ -13,14 +13,14 @@ const projects = [
     description:
       "Extracted and analyzed 2019 U.S. census data to identify communities around Massachusetts with low rates of internet access. Analyzed the socioeconomic makeup of these areas and constructed geospatial visualizations in R to easily visualize areas with internet access disparities.",
     image: "/images/project-broadband.jpg",
-    tags: ["R", "Census Data", "Geospatial Analysis"],
+    tags: ["Python", "R", "Pandas", "C", "Pytidycensus"],
   },
   {
     title: "Respiratory Illnesses Classification in Lung X-Rays",
     description:
       "Developed a convolutional neural network to classify lung X-rays into four categories (COVID-19, viral/bacterial pneumonia and normal). Optimized model performance by comparing VGG-16 vs. VGG-19 architectures over 100 test and train epochs.",
     image: "/images/project-xray.jpg",
-    tags: ["Python", "Deep Learning", "CNN", "VGG"],
+    tags: ["Python", "Pandas", "Scikit-learn", "Matplotlib"],
   },
 ]
 
@@ -45,12 +45,12 @@ export function Projects() {
               }`}
             >
               {/* Image */}
-              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-sage/30">
+              <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-sage/30 bg-muted">
                 <Image
                   src={project.image}
                   alt={`Screenshot of ${project.title}`}
                   fill
-                  className="object-cover"
+                  className="object-contain"
                 />
               </div>
 

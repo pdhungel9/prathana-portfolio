@@ -17,8 +17,8 @@ export function Hero() {
             Hi, I{"'"}m <span className="relative inline-block text-forest"><span className="relative z-10">Prathana</span><span className="absolute bottom-1.5 left-0 w-full h-3.5 bg-pumpkin/40 -z-0 rounded-sm" /></span>.
           </h1>
           <p className="mt-6 text-base md:text-lg leading-relaxed text-muted-foreground max-w-xl">
-            I{"'"}m a data engineer with a background in building and supporting
-            enterprise data platforms. I graduated magna cum laude from{" "}
+            I{"'"}m a data engineer over two years experience in building and supporting
+            enterprise data platforms. I graduated Magna Cum Laude from{" "}
             <span className="text-foreground font-medium">Boston University</span>{" "}
             with a B.A. in Computer Science, and most recently worked at{" "}
             <span className="text-foreground font-medium">Fidelity Investments</span>{" "}

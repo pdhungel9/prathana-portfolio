@@ -11,7 +11,7 @@ const jobs = [
     title: "Python Teaching Assistant",
     company: "Boston University",
     description:
-      "Mentored students on debugging techniques and core Python concepts during biweekly office hours. Instructed three discussion sections with 30+ students and facilitated weekly grading of 600+ assignments.",
+      "Mentored students on debugging techniques and core Python concepts during biweekly office hours. Instructed three discussion sections with 30+ students and facilitated weekly grading of 300+ assignments.",
   },
 ]
 
