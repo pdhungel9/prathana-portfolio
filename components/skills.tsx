@@ -1,4 +1,4 @@
-import { Code2, Cloud, DatabaseZap, GitBranch, Database, Wind } from "lucide-react"
+import { Code2, Cloud, GitBranch, Database, Wind } from "lucide-react"
 
 const skillGroups = [
   {
@@ -26,20 +26,12 @@ const skillGroups = [
     skills: ["S3", "Batch", "CloudWatch", "IAM", "KMS"],
   },
   {
-    label: "Orchestration Tools",
+    label: "Orchestration & Replication",
     icon: Wind,
     bg: "bg-sage-soft",
     border: "border-sage/30",
     iconColor: "text-forest",
-    skills: ["Control-M", "Airflow"],
-  },
-  {
-    label: "Replication Tools",
-    icon: DatabaseZap,
-    bg: "bg-maroon-soft",
-    border: "border-maroon/20",
-    iconColor: "text-maroon",
-    skills: ["Fivetran", "Oracle GoldenGate"],
+    skills: ["Control-M", "Airflow", "Fivetran", "Oracle GoldenGate"],
   },
   {
     label: "DevOps & Collaboration",
