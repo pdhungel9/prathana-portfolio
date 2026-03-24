@@ -1,4 +1,4 @@
-import { Landing } from "@/components/landing"
+import { Navbar } from "@/components/navbar"
 import { Hero } from "@/components/hero"
 import { Experience } from "@/components/experience"
 import { Skills } from "@/components/skills"
@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer"
 export default function Home() {
   return (
     <main className="min-h-screen">
-      <Landing />
+      <Navbar />
       <Hero />
       <Experience />
       <Skills />
