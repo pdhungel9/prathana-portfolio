@@ -4,7 +4,7 @@ const jobs = [
     title: "Data Engineer",
     company: "Fidelity Investments",
     description:
-      "Built and supported integrated enterprise data platforms leveraging Oracle and Snowflake. Migrated legacy batch jobs using AWS and Control-M, automated PII masking pipelines in Snowflake, and boosted CDC pipeline reliability by automating 20+ daily validation jobs across data platforms.",
+      "Built integrated data platforms leveraging Oracle and Snowflake. Migrated legacy batch jobs to use a cloud-native architecture on AWS, automated a PII masking pipeline in Snowflake, and ensured data integrity by automating 20+ daily validation workflows across data platforms.",
   },
   {
     period: "2021 - 2022",
